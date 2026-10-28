@@ -1,0 +1,8 @@
+# LF everywhere: Prettier and the release script expect it.
+* text=auto eol=lf
+*.jpg binary
+*.png binary
+
+
+# Recorded files of MeteoSwiss: kept byte for byte (CRLF included).
+test/fixtures/*.csv -text

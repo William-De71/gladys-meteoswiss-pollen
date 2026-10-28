@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="534" viewBox="0 0 800 534">
+  <!-- Cover of the MeteoSwiss Pollen integration for Gladys Assistant
+       (illustration: no logo of MeteoSwiss nor of the Confederation). Alpine
+       peaks, a birch and grass release pollen grains; the bars are hourly
+       measurements, colored by pollen load class. Built into cover.jpg by
+       scripts/build-cover.sh. -->
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#16324f"/>
+      <stop offset="0.55" stop-color="#2f6f8f"/>
+      <stop offset="1" stop-color="#8cc0b0"/>
+    </linearGradient>
+    <linearGradient id="far" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5d7f99"/>
+      <stop offset="1" stop-color="#3f6077"/>
+    </linearGradient>
+    <linearGradient id="meadow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5aa463"/>
+      <stop offset="1" stop-color="#2f7440"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffe9a8" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#ffe9a8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="grain" cx="0.4" cy="0.35" r="0.65">
+      <stop offset="0" stop-color="#fff3b0"/>
+      <stop offset="1" stop-color="#e3b23c"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="534" fill="url(#sky)"/>
+  <circle cx="610" cy="120" r="200" fill="url(#sun)"/>
+
+  <!-- far peaks with snow -->
+  <path d="M0 330 L90 230 L150 280 L250 150 L330 250 L400 190 L480 270 L560 160 L650 260 L720 210 L800 270 L800 400 L0 400 Z" fill="url(#far)"/>
+  <g fill="#eef4f7">
+    <path d="M250 150 L282 190 L268 186 L256 200 L244 184 L228 188 Z"/>
+    <path d="M560 160 L590 196 L575 192 L563 206 L551 190 L536 194 Z"/>
+    <path d="M400 190 L420 214 L408 211 L398 222 L388 210 L380 213 Z"/>
+    <path d="M90 230 L108 252 L98 250 L90 260 L82 249 L74 250 Z"/>
+  </g>
+
+  <!-- meadow -->
+  <path d="M0 360 C 160 330, 300 350, 420 340 C 560 330, 680 350, 800 335 L800 534 L0 534 Z" fill="url(#meadow)"/>
+
+  <!-- birch, left -->
+  <g transform="translate(140 380)">
+    <rect x="-9" y="-150" width="18" height="190" fill="#f2efe6"/>
+    <g fill="#2b2b2b">
+      <rect x="-9" y="-120" width="10" height="4"/><rect x="0" y="-80" width="9" height="3"/>
+      <rect x="-9" y="-40" width="8" height="4"/><rect x="2" y="-10" width="7" height="3"/>
+      <rect x="-6" y="15" width="9" height="3"/>
+    </g>
+    <circle cx="0" cy="-170" r="62" fill="#7cbf5a"/>
+    <circle cx="-48" cy="-130" r="42" fill="#8acb66"/>
+    <circle cx="46" cy="-135" r="44" fill="#6bb04d"/>
+    <g stroke="#c9a23a" stroke-width="3" stroke-linecap="round">
+      <path d="M-30 -110 v22"/><path d="M-6 -118 v26"/><path d="M22 -112 v24"/><path d="M48 -104 v20"/>
+    </g>
+  </g>
+
+  <!-- grass tufts -->
+  <g stroke="#245f33" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M300 470 C 296 440, 292 420, 284 400"/>
+    <path d="M308 470 C 310 438, 316 420, 326 402"/>
+    <path d="M304 470 C 304 440, 304 418, 306 392"/>
+    <path d="M700 480 C 696 450, 690 430, 682 410"/>
+    <path d="M708 480 C 712 450, 718 432, 730 414"/>
+  </g>
+  <g fill="#d9b44a">
+    <ellipse cx="306" cy="388" rx="4" ry="9"/><ellipse cx="283" cy="397" rx="3.5" ry="8"/>
+    <ellipse cx="328" cy="398" rx="3.5" ry="8"/><ellipse cx="682" cy="406" rx="3.5" ry="8"/>
+    <ellipse cx="732" cy="410" rx="3.5" ry="8"/>
+  </g>
+
+  <!-- pollen grains in the air -->
+  <g fill="url(#grain)">
+    <circle cx="230" cy="170" r="9"/><circle cx="290" cy="120" r="6"/><circle cx="350" cy="160" r="11"/>
+    <circle cx="200" cy="100" r="5"/><circle cx="330" cy="230" r="6"/><circle cx="260" cy="250" r="5"/>
+    <circle cx="380" cy="90" r="5"/><circle cx="420" cy="140" r="7"/><circle cx="160" cy="60" r="5"/>
+  </g>
+  <g fill="#c8922a" opacity="0.7">
+    <circle cx="347" cy="156" r="2"/><circle cx="355" cy="163" r="2"/><circle cx="227" cy="167" r="1.6"/>
+    <circle cx="233" cy="173" r="1.6"/><circle cx="418" cy="137" r="1.6"/><circle cx="423" cy="143" r="1.6"/>
+  </g>
+
+  <!-- hourly measurements: bars colored by pollen load class -->
+  <g transform="translate(460 300)">
+    <rect x="-16" y="-170" width="300" height="190" rx="14" fill="#0f2233" opacity="0.55"/>
+    <g>
+      <rect x="0" y="-22" width="22" height="22" rx="3" fill="#4caf50"/>
+      <rect x="30" y="-34" width="22" height="34" rx="3" fill="#4caf50"/>
+      <rect x="60" y="-58" width="22" height="58" rx="3" fill="#f2b632"/>
+      <rect x="90" y="-84" width="22" height="84" rx="3" fill="#f2b632"/>
+      <rect x="120" y="-120" width="22" height="120" rx="3" fill="#e5533d"/>
+      <rect x="150" y="-146" width="22" height="146" rx="3" fill="#e5533d"/>
+      <rect x="180" y="-104" width="22" height="104" rx="3" fill="#e5533d"/>
+      <rect x="210" y="-70" width="22" height="70" rx="3" fill="#f2b632"/>
+      <rect x="240" y="-40" width="22" height="40" rx="3" fill="#4caf50"/>
+    </g>
+    <rect x="-4" y="2" width="276" height="3" fill="#cfe0ea" opacity="0.8"/>
+  </g>
+</svg>

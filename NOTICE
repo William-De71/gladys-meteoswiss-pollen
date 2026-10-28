@@ -1,0 +1,16 @@
+Gladys MeteoSwiss Pollen integration
+Copyright 2026 William Deren
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+The pollen data are Open Government Data of the Federal Office of Meteorology
+and Climatology MeteoSwiss (national pollen monitoring network, STAC
+collection ch.meteoschweiz.ogd-pollen), used under the MeteoSwiss terms of use
+for open data: Source: MeteoSwiss. The widgets and the documentation name the
+source, as these terms ask.
+
+The pollen load classes come from the MeteoSwiss document "Threshold values
+for pollen load classes of allergenic pollen types" (2024-01-10).
+
+This community integration is not affiliated with, endorsed or sponsored by
+MeteoSwiss.

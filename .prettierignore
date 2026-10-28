@@ -1,0 +1,11 @@
+node_modules/
+package-lock.json
+/data/
+*.log
+
+# Forum post drafts: pasted by hand on the forum, never committed.
+.github/forum-*.md
+
+
+# Recorded files of MeteoSwiss: kept byte for byte.
+test/fixtures/*.csv

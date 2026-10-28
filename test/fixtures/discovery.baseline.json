@@ -1,0 +1,2459 @@
+{
+  "devices": {
+    "PBS": {
+      "external_id": "ext:test-integration:station:PBS",
+      "should_poll": false,
+      "params": ["STATION", "CANTON", "LATITUDE", "LONGITUDE", "ALTITUDE"],
+      "features": [
+        {
+          "external_id": "ext:test-integration:station:PBS:level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PBS:hazel",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PBS:alder",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PBS:ash",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PBS:birch",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PBS:beech",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PBS:oak",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PBS:grasses",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PBS:hazel_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PBS:alder_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PBS:ash_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PBS:birch_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PBS:beech_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PBS:oak_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PBS:grasses_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PBS:main_pollen",
+          "category": "text",
+          "type": "text",
+          "min": 0,
+          "max": 0,
+          "read_only": true,
+          "has_feedback": false
+        }
+      ]
+    },
+    "PBE": {
+      "external_id": "ext:test-integration:station:PBE",
+      "should_poll": false,
+      "params": ["STATION", "CANTON", "LATITUDE", "LONGITUDE", "ALTITUDE"],
+      "features": [
+        {
+          "external_id": "ext:test-integration:station:PBE:level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PBE:hazel",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PBE:alder",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PBE:ash",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PBE:birch",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PBE:beech",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PBE:oak",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PBE:grasses",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PBE:hazel_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PBE:alder_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PBE:ash_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PBE:birch_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PBE:beech_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PBE:oak_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PBE:grasses_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PBE:main_pollen",
+          "category": "text",
+          "type": "text",
+          "min": 0,
+          "max": 0,
+          "read_only": true,
+          "has_feedback": false
+        }
+      ]
+    },
+    "PBU": {
+      "external_id": "ext:test-integration:station:PBU",
+      "should_poll": false,
+      "params": ["STATION", "CANTON", "LATITUDE", "LONGITUDE", "ALTITUDE"],
+      "features": [
+        {
+          "external_id": "ext:test-integration:station:PBU:level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PBU:hazel",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PBU:alder",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PBU:ash",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PBU:birch",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PBU:beech",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PBU:oak",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PBU:grasses",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PBU:hazel_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PBU:alder_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PBU:ash_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PBU:birch_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PBU:beech_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PBU:oak_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PBU:grasses_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PBU:main_pollen",
+          "category": "text",
+          "type": "text",
+          "min": 0,
+          "max": 0,
+          "read_only": true,
+          "has_feedback": false
+        }
+      ]
+    },
+    "PDS": {
+      "external_id": "ext:test-integration:station:PDS",
+      "should_poll": false,
+      "params": ["STATION", "CANTON", "LATITUDE", "LONGITUDE", "ALTITUDE"],
+      "features": [
+        {
+          "external_id": "ext:test-integration:station:PDS:level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PDS:hazel",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PDS:alder",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PDS:ash",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PDS:birch",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PDS:beech",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PDS:oak",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PDS:grasses",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PDS:hazel_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PDS:alder_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PDS:ash_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PDS:birch_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PDS:beech_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PDS:oak_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PDS:grasses_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PDS:main_pollen",
+          "category": "text",
+          "type": "text",
+          "min": 0,
+          "max": 0,
+          "read_only": true,
+          "has_feedback": false
+        }
+      ]
+    },
+    "PGE": {
+      "external_id": "ext:test-integration:station:PGE",
+      "should_poll": false,
+      "params": ["STATION", "CANTON", "LATITUDE", "LONGITUDE", "ALTITUDE"],
+      "features": [
+        {
+          "external_id": "ext:test-integration:station:PGE:level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PGE:hazel",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PGE:alder",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PGE:ash",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PGE:birch",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PGE:beech",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PGE:oak",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PGE:grasses",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PGE:hazel_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PGE:alder_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PGE:ash_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PGE:birch_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PGE:beech_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PGE:oak_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PGE:grasses_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PGE:main_pollen",
+          "category": "text",
+          "type": "text",
+          "min": 0,
+          "max": 0,
+          "read_only": true,
+          "has_feedback": false
+        }
+      ]
+    },
+    "PCF": {
+      "external_id": "ext:test-integration:station:PCF",
+      "should_poll": false,
+      "params": ["STATION", "CANTON", "LATITUDE", "LONGITUDE", "ALTITUDE"],
+      "features": [
+        {
+          "external_id": "ext:test-integration:station:PCF:level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PCF:hazel",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PCF:alder",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PCF:ash",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PCF:birch",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PCF:beech",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PCF:oak",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PCF:grasses",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PCF:hazel_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PCF:alder_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PCF:ash_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PCF:birch_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PCF:beech_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PCF:oak_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PCF:grasses_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PCF:main_pollen",
+          "category": "text",
+          "type": "text",
+          "min": 0,
+          "max": 0,
+          "read_only": true,
+          "has_feedback": false
+        }
+      ]
+    },
+    "PLS": {
+      "external_id": "ext:test-integration:station:PLS",
+      "should_poll": false,
+      "params": ["STATION", "CANTON", "LATITUDE", "LONGITUDE", "ALTITUDE"],
+      "features": [
+        {
+          "external_id": "ext:test-integration:station:PLS:level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLS:hazel",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLS:alder",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLS:ash",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLS:birch",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLS:beech",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLS:oak",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLS:grasses",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLS:hazel_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLS:alder_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLS:ash_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLS:birch_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLS:beech_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLS:oak_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLS:grasses_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLS:main_pollen",
+          "category": "text",
+          "type": "text",
+          "min": 0,
+          "max": 0,
+          "read_only": true,
+          "has_feedback": false
+        }
+      ]
+    },
+    "PLO": {
+      "external_id": "ext:test-integration:station:PLO",
+      "should_poll": false,
+      "params": ["STATION", "CANTON", "LATITUDE", "LONGITUDE", "ALTITUDE"],
+      "features": [
+        {
+          "external_id": "ext:test-integration:station:PLO:level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLO:hazel",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLO:alder",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLO:ash",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLO:birch",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLO:beech",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLO:oak",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLO:grasses",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLO:hazel_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLO:alder_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLO:ash_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLO:birch_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLO:beech_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLO:oak_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLO:grasses_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLO:main_pollen",
+          "category": "text",
+          "type": "text",
+          "min": 0,
+          "max": 0,
+          "read_only": true,
+          "has_feedback": false
+        }
+      ]
+    },
+    "PLU": {
+      "external_id": "ext:test-integration:station:PLU",
+      "should_poll": false,
+      "params": ["STATION", "CANTON", "LATITUDE", "LONGITUDE", "ALTITUDE"],
+      "features": [
+        {
+          "external_id": "ext:test-integration:station:PLU:level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLU:hazel",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLU:alder",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLU:ash",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLU:birch",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLU:beech",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLU:oak",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLU:grasses",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLU:hazel_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLU:alder_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLU:ash_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLU:birch_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLU:beech_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLU:oak_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLU:grasses_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLU:main_pollen",
+          "category": "text",
+          "type": "text",
+          "min": 0,
+          "max": 0,
+          "read_only": true,
+          "has_feedback": false
+        }
+      ]
+    },
+    "PLZ": {
+      "external_id": "ext:test-integration:station:PLZ",
+      "should_poll": false,
+      "params": ["STATION", "CANTON", "LATITUDE", "LONGITUDE", "ALTITUDE"],
+      "features": [
+        {
+          "external_id": "ext:test-integration:station:PLZ:level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLZ:hazel",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLZ:alder",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLZ:ash",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLZ:birch",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLZ:beech",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLZ:oak",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLZ:grasses",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLZ:hazel_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLZ:alder_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLZ:ash_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLZ:birch_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLZ:beech_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLZ:oak_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLZ:grasses_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PLZ:main_pollen",
+          "category": "text",
+          "type": "text",
+          "min": 0,
+          "max": 0,
+          "read_only": true,
+          "has_feedback": false
+        }
+      ]
+    },
+    "PMU": {
+      "external_id": "ext:test-integration:station:PMU",
+      "should_poll": false,
+      "params": ["STATION", "CANTON", "LATITUDE", "LONGITUDE", "ALTITUDE"],
+      "features": [
+        {
+          "external_id": "ext:test-integration:station:PMU:level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PMU:hazel",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PMU:alder",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PMU:ash",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PMU:birch",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PMU:beech",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PMU:oak",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PMU:grasses",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PMU:hazel_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PMU:alder_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PMU:ash_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PMU:birch_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PMU:beech_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PMU:oak_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PMU:grasses_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PMU:main_pollen",
+          "category": "text",
+          "type": "text",
+          "min": 0,
+          "max": 0,
+          "read_only": true,
+          "has_feedback": false
+        }
+      ]
+    },
+    "PNE": {
+      "external_id": "ext:test-integration:station:PNE",
+      "should_poll": false,
+      "params": ["STATION", "CANTON", "LATITUDE", "LONGITUDE", "ALTITUDE"],
+      "features": [
+        {
+          "external_id": "ext:test-integration:station:PNE:level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PNE:hazel",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PNE:alder",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PNE:ash",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PNE:birch",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PNE:beech",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PNE:oak",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PNE:grasses",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PNE:hazel_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PNE:alder_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PNE:ash_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PNE:birch_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PNE:beech_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PNE:oak_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PNE:grasses_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PNE:main_pollen",
+          "category": "text",
+          "type": "text",
+          "min": 0,
+          "max": 0,
+          "read_only": true,
+          "has_feedback": false
+        }
+      ]
+    },
+    "PPY": {
+      "external_id": "ext:test-integration:station:PPY",
+      "should_poll": false,
+      "params": ["STATION", "CANTON", "LATITUDE", "LONGITUDE", "ALTITUDE"],
+      "features": [
+        {
+          "external_id": "ext:test-integration:station:PPY:level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PPY:hazel",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PPY:alder",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PPY:ash",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PPY:birch",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PPY:beech",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PPY:oak",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PPY:grasses",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PPY:hazel_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PPY:alder_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PPY:ash_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PPY:birch_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PPY:beech_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PPY:oak_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PPY:grasses_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PPY:main_pollen",
+          "category": "text",
+          "type": "text",
+          "min": 0,
+          "max": 0,
+          "read_only": true,
+          "has_feedback": false
+        }
+      ]
+    },
+    "PSN": {
+      "external_id": "ext:test-integration:station:PSN",
+      "should_poll": false,
+      "params": ["STATION", "CANTON", "LATITUDE", "LONGITUDE", "ALTITUDE"],
+      "features": [
+        {
+          "external_id": "ext:test-integration:station:PSN:level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PSN:hazel",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PSN:alder",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PSN:ash",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PSN:birch",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PSN:beech",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PSN:oak",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PSN:grasses",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PSN:hazel_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PSN:alder_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PSN:ash_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PSN:birch_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PSN:beech_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PSN:oak_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PSN:grasses_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PSN:main_pollen",
+          "category": "text",
+          "type": "text",
+          "min": 0,
+          "max": 0,
+          "read_only": true,
+          "has_feedback": false
+        }
+      ]
+    },
+    "PZH": {
+      "external_id": "ext:test-integration:station:PZH",
+      "should_poll": false,
+      "params": ["STATION", "CANTON", "LATITUDE", "LONGITUDE", "ALTITUDE"],
+      "features": [
+        {
+          "external_id": "ext:test-integration:station:PZH:level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PZH:hazel",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PZH:alder",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PZH:ash",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PZH:birch",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PZH:beech",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PZH:oak",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PZH:grasses",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 20000,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PZH:hazel_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PZH:alder_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PZH:ash_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PZH:birch_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PZH:beech_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PZH:oak_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PZH:grasses_level",
+          "category": "airquality-sensor",
+          "type": "aqi",
+          "min": 0,
+          "max": 4,
+          "read_only": true,
+          "has_feedback": false
+        },
+        {
+          "external_id": "ext:test-integration:station:PZH:main_pollen",
+          "category": "text",
+          "type": "text",
+          "min": 0,
+          "max": 0,
+          "read_only": true,
+          "has_feedback": false
+        }
+      ]
+    }
+  },
+  "manifest": {
+    "actions": ["refresh", "diagnostic"],
+    "config_schema": [
+      {
+        "key": "intro",
+        "type": "section"
+      },
+      {
+        "key": "stations",
+        "type": "section"
+      },
+      {
+        "key": "station_1",
+        "type": "select"
+      },
+      {
+        "key": "station_2",
+        "type": "select"
+      },
+      {
+        "key": "station_3",
+        "type": "select"
+      },
+      {
+        "key": "options",
+        "type": "section"
+      },
+      {
+        "key": "language",
+        "type": "select"
+      }
+    ],
+    "scene_triggers": [
+      {
+        "key": "pollen_alert",
+        "fields": [
+          {
+            "key": "station",
+            "options": []
+          },
+          {
+            "key": "pollen_type",
+            "options": ["hazel", "alder", "ash", "birch", "beech", "oak", "grasses"]
+          },
+          {
+            "key": "level",
+            "options": ["2", "3", "4"]
+          }
+        ],
+        "variables": [
+          {
+            "key": "station_name",
+            "type": "string"
+          },
+          {
+            "key": "pollen_type",
+            "type": "string"
+          },
+          {
+            "key": "type_label",
+            "type": "string"
+          },
+          {
+            "key": "level",
+            "type": "number"
+          },
+          {
+            "key": "label",
+            "type": "string"
+          },
+          {
+            "key": "concentration",
+            "type": "number"
+          },
+          {
+            "key": "last_hour",
+            "type": "number"
+          },
+          {
+            "key": "measured_at",
+            "type": "string"
+          },
+          {
+            "key": "summary",
+            "type": "string"
+          }
+        ]
+      }
+    ],
+    "scene_actions": [
+      {
+        "key": "get_pollen",
+        "fields": ["station"],
+        "outputs": [
+          {
+            "key": "station_name",
+            "type": "string"
+          },
+          {
+            "key": "measured_at",
+            "type": "string"
+          },
+          {
+            "key": "level",
+            "type": "number"
+          },
+          {
+            "key": "label",
+            "type": "string"
+          },
+          {
+            "key": "main_pollen",
+            "type": "string"
+          },
+          {
+            "key": "summary",
+            "type": "string"
+          },
+          {
+            "key": "hazel",
+            "type": "number"
+          },
+          {
+            "key": "alder",
+            "type": "number"
+          },
+          {
+            "key": "ash",
+            "type": "number"
+          },
+          {
+            "key": "birch",
+            "type": "number"
+          },
+          {
+            "key": "beech",
+            "type": "number"
+          },
+          {
+            "key": "oak",
+            "type": "number"
+          },
+          {
+            "key": "grasses",
+            "type": "number"
+          },
+          {
+            "key": "hazel_level",
+            "type": "number"
+          },
+          {
+            "key": "alder_level",
+            "type": "number"
+          },
+          {
+            "key": "ash_level",
+            "type": "number"
+          },
+          {
+            "key": "birch_level",
+            "type": "number"
+          },
+          {
+            "key": "beech_level",
+            "type": "number"
+          },
+          {
+            "key": "oak_level",
+            "type": "number"
+          },
+          {
+            "key": "grasses_level",
+            "type": "number"
+          }
+        ]
+      }
+    ],
+    "widgets": [
+      {
+        "key": "station",
+        "settings": ["station"],
+        "options": {}
+      },
+      {
+        "key": "history",
+        "settings": ["station"],
+        "options": {}
+      }
+    ]
+  }
+}

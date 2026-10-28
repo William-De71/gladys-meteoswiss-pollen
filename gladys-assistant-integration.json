@@ -1,0 +1,1364 @@
+{
+  "manifest_version": 1,
+  "type": "device",
+  "name": "MeteoSwiss Pollen",
+  "description": {
+    "en": "Pollen measured every hour by MeteoSwiss: 15 Swiss stations, seven pollens, levels.",
+    "fr": "Pollens mesurés chaque heure par MétéoSuisse : 15 stations suisses, sept pollens, niveaux.",
+    "de": "Stündlich von MeteoSchweiz gemessene Pollen: 15 Schweizer Stationen, sieben Arten, Stufen.",
+    "es": "Polen medido cada hora por MeteoSuiza: 15 estaciones suizas, siete pólenes, niveles."
+  },
+  "version": "0.1.0",
+  "docker_image": "ghcr.io/william-de71/gladys-meteoswiss-pollen:0.1.0",
+  "gladys_version": ">=5.3.0",
+  "categories": ["environment"],
+  "keywords": [
+    "MeteoSchweiz",
+    "MétéoSuisse",
+    "MeteoSvizzera",
+    "allergy",
+    "allergie",
+    "hay fever",
+    "Heuschnupfen",
+    "Pollenflug",
+    "birch",
+    "graminées"
+  ],
+  "countries": ["CH"],
+  "cover_image": "https://raw.githubusercontent.com/William-De71/gladys-meteoswiss-pollen/main/cover.jpg",
+  "transports": ["cloud"],
+  "config_schema": [
+    {
+      "key": "intro",
+      "type": "section",
+      "label": {
+        "en": "MeteoSwiss pollen stations",
+        "fr": "Stations polliniques de MétéoSuisse",
+        "de": "Pollenstationen von MeteoSchweiz",
+        "es": "Estaciones de polen de MeteoSuiza"
+      },
+      "description": {
+        "en": "The data come from the national pollen monitoring network of MeteoSwiss: the pollen counted every hour in the air of 15 stations, for hazel, alder, ash, birch, beech, oak and grasses. They are open government data: no account and no key are needed. The integration reads them every 20 minutes. Source: MeteoSwiss.",
+        "fr": "Les données viennent du réseau national de mesure des pollens de MétéoSuisse : les pollens comptés chaque heure dans l’air de 15 stations, pour le noisetier, l’aulne, le frêne, le bouleau, le hêtre, le chêne et les graminées. Ce sont des données publiques ouvertes : aucun compte ni clé n’est nécessaire. L’intégration les lit toutes les 20 minutes. Source : MétéoSuisse.",
+        "de": "Die Daten stammen vom nationalen Pollenmessnetz von MeteoSchweiz: die stündlich in der Luft von 15 Stationen gezählten Pollen von Hasel, Erle, Esche, Birke, Buche, Eiche und Gräsern. Es sind offene Behördendaten: Weder Konto noch Schlüssel sind nötig. Die Integration liest sie alle 20 Minuten. Quelle: MeteoSchweiz.",
+        "es": "Los datos proceden de la red nacional de medición de polen de MeteoSuiza: el polen contado cada hora en el aire de 15 estaciones, para avellano, aliso, fresno, abedul, haya, roble y gramíneas. Son datos públicos abiertos: no hace falta cuenta ni clave. La integración los lee cada 20 minutos. Fuente: MeteoSuiza."
+      },
+      "links": [
+        {
+          "url": "https://github.com/William-De71/gladys-meteoswiss-pollen",
+          "label": {
+            "en": "Documentation and support",
+            "fr": "Documentation et support",
+            "de": "Dokumentation und Support",
+            "es": "Documentación y soporte"
+          }
+        },
+        {
+          "url": "https://www.meteoswiss.admin.ch/weather/weather-and-climate-from-a-to-z/pollen.html",
+          "label": {
+            "en": "Pollen at MeteoSwiss",
+            "fr": "Les pollens chez MétéoSuisse",
+            "de": "Pollen bei MeteoSchweiz",
+            "es": "El polen en MeteoSuiza"
+          }
+        }
+      ]
+    },
+    {
+      "key": "stations",
+      "type": "section",
+      "label": {
+        "en": "Stations",
+        "fr": "Stations",
+        "de": "Stationen",
+        "es": "Estaciones"
+      },
+      "description": {
+        "en": "Choose up to three stations, the nearest to your home first. Each station becomes a device in the Discover tab.",
+        "fr": "Choisissez jusqu’à trois stations, la plus proche de chez vous d’abord. Chaque station devient un appareil dans l’onglet Découverte.",
+        "de": "Wählen Sie bis zu drei Stationen, die nächstgelegene zuerst. Jede Station wird zu einem Gerät im Tab Entdecken.",
+        "es": "Elija hasta tres estaciones, la más cercana a su casa primero. Cada estación se convierte en un dispositivo en la pestaña Descubrir."
+      }
+    },
+    {
+      "key": "station_1",
+      "type": "select",
+      "required": true,
+      "label": {
+        "en": "Station 1",
+        "fr": "Station 1",
+        "de": "Station 1",
+        "es": "Estación 1"
+      },
+      "options": [
+        {
+          "value": "PBS",
+          "label": {
+            "en": "Basel",
+            "fr": "Basel",
+            "de": "Basel",
+            "es": "Basel"
+          }
+        },
+        {
+          "value": "PBE",
+          "label": {
+            "en": "Bern",
+            "fr": "Bern",
+            "de": "Bern",
+            "es": "Bern"
+          }
+        },
+        {
+          "value": "PBU",
+          "label": {
+            "en": "Buchs SG",
+            "fr": "Buchs SG",
+            "de": "Buchs SG",
+            "es": "Buchs SG"
+          }
+        },
+        {
+          "value": "PDS",
+          "label": {
+            "en": "Davos",
+            "fr": "Davos",
+            "de": "Davos",
+            "es": "Davos"
+          }
+        },
+        {
+          "value": "PGE",
+          "label": {
+            "en": "Genève",
+            "fr": "Genève",
+            "de": "Genève",
+            "es": "Genève"
+          }
+        },
+        {
+          "value": "PCF",
+          "label": {
+            "en": "La Chaux-de-Fonds",
+            "fr": "La Chaux-de-Fonds",
+            "de": "La Chaux-de-Fonds",
+            "es": "La Chaux-de-Fonds"
+          }
+        },
+        {
+          "value": "PLS",
+          "label": {
+            "en": "Lausanne",
+            "fr": "Lausanne",
+            "de": "Lausanne",
+            "es": "Lausanne"
+          }
+        },
+        {
+          "value": "PLO",
+          "label": {
+            "en": "Locarno",
+            "fr": "Locarno",
+            "de": "Locarno",
+            "es": "Locarno"
+          }
+        },
+        {
+          "value": "PLU",
+          "label": {
+            "en": "Lugano",
+            "fr": "Lugano",
+            "de": "Lugano",
+            "es": "Lugano"
+          }
+        },
+        {
+          "value": "PLZ",
+          "label": {
+            "en": "Luzern",
+            "fr": "Luzern",
+            "de": "Luzern",
+            "es": "Luzern"
+          }
+        },
+        {
+          "value": "PMU",
+          "label": {
+            "en": "Münsterlingen",
+            "fr": "Münsterlingen",
+            "de": "Münsterlingen",
+            "es": "Münsterlingen"
+          }
+        },
+        {
+          "value": "PNE",
+          "label": {
+            "en": "Neuchâtel",
+            "fr": "Neuchâtel",
+            "de": "Neuchâtel",
+            "es": "Neuchâtel"
+          }
+        },
+        {
+          "value": "PPY",
+          "label": {
+            "en": "Payerne",
+            "fr": "Payerne",
+            "de": "Payerne",
+            "es": "Payerne"
+          }
+        },
+        {
+          "value": "PSN",
+          "label": {
+            "en": "Sion",
+            "fr": "Sion",
+            "de": "Sion",
+            "es": "Sion"
+          }
+        },
+        {
+          "value": "PZH",
+          "label": {
+            "en": "Zürich",
+            "fr": "Zürich",
+            "de": "Zürich",
+            "es": "Zürich"
+          }
+        }
+      ]
+    },
+    {
+      "key": "station_2",
+      "type": "select",
+      "required": false,
+      "label": {
+        "en": "Station 2",
+        "fr": "Station 2",
+        "de": "Station 2",
+        "es": "Estación 2"
+      },
+      "options": [
+        {
+          "value": "PBS",
+          "label": {
+            "en": "Basel",
+            "fr": "Basel",
+            "de": "Basel",
+            "es": "Basel"
+          }
+        },
+        {
+          "value": "PBE",
+          "label": {
+            "en": "Bern",
+            "fr": "Bern",
+            "de": "Bern",
+            "es": "Bern"
+          }
+        },
+        {
+          "value": "PBU",
+          "label": {
+            "en": "Buchs SG",
+            "fr": "Buchs SG",
+            "de": "Buchs SG",
+            "es": "Buchs SG"
+          }
+        },
+        {
+          "value": "PDS",
+          "label": {
+            "en": "Davos",
+            "fr": "Davos",
+            "de": "Davos",
+            "es": "Davos"
+          }
+        },
+        {
+          "value": "PGE",
+          "label": {
+            "en": "Genève",
+            "fr": "Genève",
+            "de": "Genève",
+            "es": "Genève"
+          }
+        },
+        {
+          "value": "PCF",
+          "label": {
+            "en": "La Chaux-de-Fonds",
+            "fr": "La Chaux-de-Fonds",
+            "de": "La Chaux-de-Fonds",
+            "es": "La Chaux-de-Fonds"
+          }
+        },
+        {
+          "value": "PLS",
+          "label": {
+            "en": "Lausanne",
+            "fr": "Lausanne",
+            "de": "Lausanne",
+            "es": "Lausanne"
+          }
+        },
+        {
+          "value": "PLO",
+          "label": {
+            "en": "Locarno",
+            "fr": "Locarno",
+            "de": "Locarno",
+            "es": "Locarno"
+          }
+        },
+        {
+          "value": "PLU",
+          "label": {
+            "en": "Lugano",
+            "fr": "Lugano",
+            "de": "Lugano",
+            "es": "Lugano"
+          }
+        },
+        {
+          "value": "PLZ",
+          "label": {
+            "en": "Luzern",
+            "fr": "Luzern",
+            "de": "Luzern",
+            "es": "Luzern"
+          }
+        },
+        {
+          "value": "PMU",
+          "label": {
+            "en": "Münsterlingen",
+            "fr": "Münsterlingen",
+            "de": "Münsterlingen",
+            "es": "Münsterlingen"
+          }
+        },
+        {
+          "value": "PNE",
+          "label": {
+            "en": "Neuchâtel",
+            "fr": "Neuchâtel",
+            "de": "Neuchâtel",
+            "es": "Neuchâtel"
+          }
+        },
+        {
+          "value": "PPY",
+          "label": {
+            "en": "Payerne",
+            "fr": "Payerne",
+            "de": "Payerne",
+            "es": "Payerne"
+          }
+        },
+        {
+          "value": "PSN",
+          "label": {
+            "en": "Sion",
+            "fr": "Sion",
+            "de": "Sion",
+            "es": "Sion"
+          }
+        },
+        {
+          "value": "PZH",
+          "label": {
+            "en": "Zürich",
+            "fr": "Zürich",
+            "de": "Zürich",
+            "es": "Zürich"
+          }
+        }
+      ],
+      "description": {
+        "en": "Optional.",
+        "fr": "Facultatif.",
+        "de": "Optional.",
+        "es": "Opcional."
+      }
+    },
+    {
+      "key": "station_3",
+      "type": "select",
+      "required": false,
+      "label": {
+        "en": "Station 3",
+        "fr": "Station 3",
+        "de": "Station 3",
+        "es": "Estación 3"
+      },
+      "options": [
+        {
+          "value": "PBS",
+          "label": {
+            "en": "Basel",
+            "fr": "Basel",
+            "de": "Basel",
+            "es": "Basel"
+          }
+        },
+        {
+          "value": "PBE",
+          "label": {
+            "en": "Bern",
+            "fr": "Bern",
+            "de": "Bern",
+            "es": "Bern"
+          }
+        },
+        {
+          "value": "PBU",
+          "label": {
+            "en": "Buchs SG",
+            "fr": "Buchs SG",
+            "de": "Buchs SG",
+            "es": "Buchs SG"
+          }
+        },
+        {
+          "value": "PDS",
+          "label": {
+            "en": "Davos",
+            "fr": "Davos",
+            "de": "Davos",
+            "es": "Davos"
+          }
+        },
+        {
+          "value": "PGE",
+          "label": {
+            "en": "Genève",
+            "fr": "Genève",
+            "de": "Genève",
+            "es": "Genève"
+          }
+        },
+        {
+          "value": "PCF",
+          "label": {
+            "en": "La Chaux-de-Fonds",
+            "fr": "La Chaux-de-Fonds",
+            "de": "La Chaux-de-Fonds",
+            "es": "La Chaux-de-Fonds"
+          }
+        },
+        {
+          "value": "PLS",
+          "label": {
+            "en": "Lausanne",
+            "fr": "Lausanne",
+            "de": "Lausanne",
+            "es": "Lausanne"
+          }
+        },
+        {
+          "value": "PLO",
+          "label": {
+            "en": "Locarno",
+            "fr": "Locarno",
+            "de": "Locarno",
+            "es": "Locarno"
+          }
+        },
+        {
+          "value": "PLU",
+          "label": {
+            "en": "Lugano",
+            "fr": "Lugano",
+            "de": "Lugano",
+            "es": "Lugano"
+          }
+        },
+        {
+          "value": "PLZ",
+          "label": {
+            "en": "Luzern",
+            "fr": "Luzern",
+            "de": "Luzern",
+            "es": "Luzern"
+          }
+        },
+        {
+          "value": "PMU",
+          "label": {
+            "en": "Münsterlingen",
+            "fr": "Münsterlingen",
+            "de": "Münsterlingen",
+            "es": "Münsterlingen"
+          }
+        },
+        {
+          "value": "PNE",
+          "label": {
+            "en": "Neuchâtel",
+            "fr": "Neuchâtel",
+            "de": "Neuchâtel",
+            "es": "Neuchâtel"
+          }
+        },
+        {
+          "value": "PPY",
+          "label": {
+            "en": "Payerne",
+            "fr": "Payerne",
+            "de": "Payerne",
+            "es": "Payerne"
+          }
+        },
+        {
+          "value": "PSN",
+          "label": {
+            "en": "Sion",
+            "fr": "Sion",
+            "de": "Sion",
+            "es": "Sion"
+          }
+        },
+        {
+          "value": "PZH",
+          "label": {
+            "en": "Zürich",
+            "fr": "Zürich",
+            "de": "Zürich",
+            "es": "Zürich"
+          }
+        }
+      ],
+      "description": {
+        "en": "Optional.",
+        "fr": "Facultatif.",
+        "de": "Optional.",
+        "es": "Opcional."
+      }
+    },
+    {
+      "key": "options",
+      "type": "section",
+      "label": {
+        "en": "Options",
+        "fr": "Options",
+        "de": "Optionen",
+        "es": "Opciones"
+      }
+    },
+    {
+      "key": "language",
+      "type": "select",
+      "required": false,
+      "default": "auto",
+      "label": {
+        "en": "Language of the texts",
+        "fr": "Langue des textes",
+        "de": "Sprache der Texte",
+        "es": "Idioma de los textos"
+      },
+      "description": {
+        "en": "Language of the device names and of the scene texts. Automatic: the language of your dashboard.",
+        "fr": "Langue des noms d’appareils et des textes des scènes. Automatique : la langue de votre tableau de bord.",
+        "de": "Sprache der Gerätenamen und der Szenentexte. Automatisch: die Sprache Ihres Dashboards.",
+        "es": "Idioma de los nombres de dispositivos y de los textos de escenas. Automático: el idioma de su panel."
+      },
+      "options": [
+        {
+          "value": "auto",
+          "label": {
+            "en": "Automatic",
+            "fr": "Automatique",
+            "de": "Automatisch",
+            "es": "Automático"
+          }
+        },
+        {
+          "value": "en",
+          "label": {
+            "en": "English",
+            "fr": "English",
+            "de": "English",
+            "es": "English"
+          }
+        },
+        {
+          "value": "fr",
+          "label": {
+            "en": "Français",
+            "fr": "Français",
+            "de": "Français",
+            "es": "Français"
+          }
+        },
+        {
+          "value": "de",
+          "label": {
+            "en": "Deutsch",
+            "fr": "Deutsch",
+            "de": "Deutsch",
+            "es": "Deutsch"
+          }
+        },
+        {
+          "value": "es",
+          "label": {
+            "en": "Español",
+            "fr": "Español",
+            "de": "Español",
+            "es": "Español"
+          }
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "key": "refresh",
+      "timeout_seconds": 60,
+      "label": {
+        "en": "Read now",
+        "fr": "Lire maintenant",
+        "de": "Jetzt lesen",
+        "es": "Leer ahora"
+      },
+      "description": {
+        "en": "Reads the measurements of MeteoSwiss now for every station, instead of waiting for the next reading (every 20 minutes).",
+        "fr": "Lit tout de suite les mesures de MétéoSuisse pour chaque station, sans attendre la prochaine lecture (toutes les 20 minutes).",
+        "de": "Liest die Messwerte von MeteoSchweiz sofort für jede Station, ohne auf die nächste Abfrage zu warten (alle 20 Minuten).",
+        "es": "Lee ahora las mediciones de MeteoSuiza para cada estación, sin esperar a la próxima lectura (cada 20 minutos)."
+      }
+    },
+    {
+      "key": "diagnostic",
+      "timeout_seconds": 10,
+      "label": {
+        "en": "Diagnostic",
+        "fr": "Diagnostic",
+        "de": "Diagnose",
+        "es": "Diagnóstico"
+      },
+      "description": {
+        "en": "Writes to the Logs tab the stations, the hours kept, the schedule and the last error, for a report on GitHub or the forum.",
+        "fr": "Écrit dans l’onglet Journaux les stations, les heures gardées, le planning et la dernière erreur, pour un retour sur GitHub ou le forum.",
+        "de": "Schreibt in den Tab Protokolle die Stationen, die gespeicherten Stunden, den Zeitplan und den letzten Fehler, für eine Meldung auf GitHub oder im Forum.",
+        "es": "Escribe en la pestaña Registros las estaciones, las horas guardadas, la planificación y el último error, para un informe en GitHub o el foro."
+      }
+    }
+  ],
+  "widgets": [
+    {
+      "key": "station",
+      "icon": "feather",
+      "label": {
+        "en": "Pollen station",
+        "fr": "Station pollinique",
+        "de": "Pollenstation",
+        "es": "Estación de polen"
+      },
+      "description": {
+        "en": "The seven pollens of a station: level of the last 24 hours and last hour.",
+        "fr": "Les sept pollens d’une station : niveau sur 24 heures et dernière heure.",
+        "de": "Die sieben Pollen einer Station: Belastung über 24 Stunden und letzte Stunde.",
+        "es": "Los siete pólenes de una estación: nivel en 24 horas y última hora."
+      },
+      "settings": [
+        {
+          "key": "station",
+          "type": "select",
+          "source": "devices",
+          "label": {
+            "en": "Station",
+            "fr": "Station",
+            "de": "Station",
+            "es": "Estación"
+          },
+          "description": {
+            "en": "Empty: the first station.",
+            "fr": "Vide : la première station.",
+            "de": "Leer: die erste Station.",
+            "es": "Vacío: la primera estación."
+          },
+          "required": false
+        }
+      ]
+    },
+    {
+      "key": "history",
+      "icon": "activity",
+      "label": {
+        "en": "Pollen, last 48 h",
+        "fr": "Pollens, 48 dernières h",
+        "de": "Pollen, letzte 48 h",
+        "es": "Polen, últimas 48 h"
+      },
+      "description": {
+        "en": "Hourly pollen counts of the last 48 hours, the four main pollens.",
+        "fr": "Pollens comptés chaque heure sur 48 heures, les quatre principaux.",
+        "de": "Stündlich gezählte Pollen der letzten 48 Stunden, die vier wichtigsten.",
+        "es": "Polen contado cada hora en 48 horas, los cuatro principales."
+      },
+      "settings": [
+        {
+          "key": "station",
+          "type": "select",
+          "source": "devices",
+          "label": {
+            "en": "Station",
+            "fr": "Station",
+            "de": "Station",
+            "es": "Estación"
+          },
+          "description": {
+            "en": "Empty: the first station.",
+            "fr": "Vide : la première station.",
+            "de": "Leer: die erste Station.",
+            "es": "Vacío: la primera estación."
+          },
+          "required": false
+        }
+      ]
+    }
+  ],
+  "scene_triggers": [
+    {
+      "key": "pollen_alert",
+      "label": {
+        "en": "MeteoSwiss: pollen alert",
+        "fr": "MétéoSuisse : alerte pollens",
+        "de": "MeteoSchweiz: Pollenwarnung",
+        "es": "MeteoSuiza: alerta de polen"
+      },
+      "description": {
+        "en": "A pollen reaches “Moderate” or more at a station (mean of the last 24 hours), or rises again the same day.",
+        "fr": "Un pollen atteint « Moyen » ou plus à une station (moyenne des dernières 24 heures), ou remonte le même jour.",
+        "de": "Ein Pollen erreicht „Mäßig“ oder mehr an einer Station (Mittel der letzten 24 Stunden) oder steigt am selben Tag weiter.",
+        "es": "Un polen alcanza «Moderado» o más en una estación (media de las últimas 24 horas), o vuelve a subir el mismo día."
+      },
+      "fields": [
+        {
+          "key": "station",
+          "type": "select",
+          "source": "devices",
+          "label": {
+            "en": "Station",
+            "fr": "Station",
+            "de": "Station",
+            "es": "Estación"
+          },
+          "description": {
+            "en": "Leave empty for any.",
+            "fr": "Laissez vide pour toutes.",
+            "de": "Leer lassen für alle.",
+            "es": "Déjelo vacío para todas."
+          },
+          "required": false
+        },
+        {
+          "key": "pollen_type",
+          "type": "multi_select",
+          "label": {
+            "en": "Pollen",
+            "fr": "Pollens",
+            "de": "Pollen",
+            "es": "Polen"
+          },
+          "description": {
+            "en": "Leave empty for any.",
+            "fr": "Laissez vide pour tous.",
+            "de": "Leer lassen für alle.",
+            "es": "Déjelo vacío para todos."
+          },
+          "required": false,
+          "options": [
+            {
+              "value": "hazel",
+              "label": {
+                "en": "Hazel",
+                "fr": "Noisetier",
+                "de": "Hasel",
+                "es": "Avellano"
+              }
+            },
+            {
+              "value": "alder",
+              "label": {
+                "en": "Alder",
+                "fr": "Aulne",
+                "de": "Erle",
+                "es": "Aliso"
+              }
+            },
+            {
+              "value": "ash",
+              "label": {
+                "en": "Ash",
+                "fr": "Frêne",
+                "de": "Esche",
+                "es": "Fresno"
+              }
+            },
+            {
+              "value": "birch",
+              "label": {
+                "en": "Birch",
+                "fr": "Bouleau",
+                "de": "Birke",
+                "es": "Abedul"
+              }
+            },
+            {
+              "value": "beech",
+              "label": {
+                "en": "Beech",
+                "fr": "Hêtre",
+                "de": "Buche",
+                "es": "Haya"
+              }
+            },
+            {
+              "value": "oak",
+              "label": {
+                "en": "Oak",
+                "fr": "Chêne",
+                "de": "Eiche",
+                "es": "Roble"
+              }
+            },
+            {
+              "value": "grasses",
+              "label": {
+                "en": "Grasses",
+                "fr": "Graminées",
+                "de": "Gräser",
+                "es": "Gramíneas"
+              }
+            }
+          ]
+        },
+        {
+          "key": "level",
+          "type": "multi_select",
+          "label": {
+            "en": "Levels",
+            "fr": "Niveaux",
+            "de": "Stufen",
+            "es": "Niveles"
+          },
+          "description": {
+            "en": "Leave empty for any.",
+            "fr": "Laissez vide pour tous.",
+            "de": "Leer lassen für alle.",
+            "es": "Déjelo vacío para todos."
+          },
+          "required": false,
+          "options": [
+            {
+              "value": "2",
+              "label": {
+                "en": "Moderate",
+                "fr": "Moyen",
+                "de": "Mäßig",
+                "es": "Moderado"
+              }
+            },
+            {
+              "value": "3",
+              "label": {
+                "en": "High",
+                "fr": "Fort",
+                "de": "Stark",
+                "es": "Alto"
+              }
+            },
+            {
+              "value": "4",
+              "label": {
+                "en": "Very high",
+                "fr": "Très fort",
+                "de": "Sehr stark",
+                "es": "Muy alto"
+              }
+            }
+          ]
+        }
+      ],
+      "variables": [
+        {
+          "key": "station_name",
+          "type": "string",
+          "label": {
+            "en": "Station",
+            "fr": "Station",
+            "de": "Station",
+            "es": "Estación"
+          }
+        },
+        {
+          "key": "pollen_type",
+          "type": "string",
+          "label": {
+            "en": "Pollen key",
+            "fr": "Clé du pollen",
+            "de": "Pollen-Schlüssel",
+            "es": "Clave del polen"
+          },
+          "description": {
+            "en": "hazel, alder, ash, birch, beech, oak or grasses.",
+            "fr": "hazel, alder, ash, birch, beech, oak ou grasses.",
+            "de": "hazel, alder, ash, birch, beech, oak oder grasses.",
+            "es": "hazel, alder, ash, birch, beech, oak o grasses."
+          }
+        },
+        {
+          "key": "type_label",
+          "type": "string",
+          "label": {
+            "en": "Pollen",
+            "fr": "Pollen",
+            "de": "Pollen",
+            "es": "Polen"
+          }
+        },
+        {
+          "key": "level",
+          "type": "number",
+          "label": {
+            "en": "Level",
+            "fr": "Niveau",
+            "de": "Stufe",
+            "es": "Nivel"
+          },
+          "description": {
+            "en": "2 (moderate) to 4 (very high).",
+            "fr": "2 (moyen) à 4 (très fort).",
+            "de": "2 (mäßig) bis 4 (sehr stark).",
+            "es": "2 (moderado) a 4 (muy alto)."
+          }
+        },
+        {
+          "key": "label",
+          "type": "string",
+          "label": {
+            "en": "Level name",
+            "fr": "Nom du niveau",
+            "de": "Name der Stufe",
+            "es": "Nombre del nivel"
+          }
+        },
+        {
+          "key": "concentration",
+          "type": "number",
+          "label": {
+            "en": "Concentration (24 h)",
+            "fr": "Concentration (24 h)",
+            "de": "Konzentration (24 h)",
+            "es": "Concentración (24 h)"
+          },
+          "description": {
+            "en": "Mean of the last 24 hours, pollen per m³.",
+            "fr": "Moyenne des dernières 24 heures, pollens par m³.",
+            "de": "Mittel der letzten 24 Stunden, Pollen pro m³.",
+            "es": "Media de las últimas 24 horas, pólenes por m³."
+          }
+        },
+        {
+          "key": "last_hour",
+          "type": "number",
+          "label": {
+            "en": "Last hour",
+            "fr": "Dernière heure",
+            "de": "Letzte Stunde",
+            "es": "Última hora"
+          },
+          "description": {
+            "en": "Last hour, pollen per m³; empty when unknown.",
+            "fr": "Dernière heure, pollens par m³ ; vide si inconnu.",
+            "de": "Letzte Stunde, Pollen pro m³; leer, wenn unbekannt.",
+            "es": "Última hora, pólenes por m³; vacío si se desconoce."
+          }
+        },
+        {
+          "key": "measured_at",
+          "type": "string",
+          "label": {
+            "en": "Measured at",
+            "fr": "Mesuré à",
+            "de": "Gemessen um",
+            "es": "Medido a las"
+          },
+          "description": {
+            "en": "ISO 8601, UTC: end of the last hour measured.",
+            "fr": "ISO 8601, UTC : fin de la dernière heure mesurée.",
+            "de": "ISO 8601, UTC: Ende der letzten gemessenen Stunde.",
+            "es": "ISO 8601, UTC: fin de la última hora medida."
+          }
+        },
+        {
+          "key": "summary",
+          "type": "string",
+          "label": {
+            "en": "Summary",
+            "fr": "Résumé",
+            "de": "Zusammenfassung",
+            "es": "Resumen"
+          },
+          "description": {
+            "en": "A sentence ready for a message.",
+            "fr": "Une phrase prête pour un message.",
+            "de": "Ein Satz für eine Nachricht.",
+            "es": "Una frase lista para un mensaje."
+          }
+        }
+      ]
+    }
+  ],
+  "scene_actions": [
+    {
+      "key": "get_pollen",
+      "timeout_seconds": 10,
+      "label": {
+        "en": "MeteoSwiss: read the pollen",
+        "fr": "MétéoSuisse : lire les pollens",
+        "de": "MeteoSchweiz: Pollen lesen",
+        "es": "MeteoSuiza: leer el polen"
+      },
+      "description": {
+        "en": "The pollen level and the last measurements of a station, for the next actions (a message, a condition).",
+        "fr": "Le niveau de pollens et les dernières mesures d’une station, pour les actions suivantes (un message, une condition).",
+        "de": "Die Pollenbelastung und die letzten Messwerte einer Station, für die nächsten Aktionen (eine Nachricht, eine Bedingung).",
+        "es": "El nivel de polen y las últimas mediciones de una estación, para las acciones siguientes (un mensaje, una condición)."
+      },
+      "fields": [
+        {
+          "key": "station",
+          "type": "select",
+          "source": "devices",
+          "label": {
+            "en": "Station",
+            "fr": "Station",
+            "de": "Station",
+            "es": "Estación"
+          },
+          "description": {
+            "en": "Empty: the first station.",
+            "fr": "Vide : la première station.",
+            "de": "Leer: die erste Station.",
+            "es": "Vacío: la primera estación."
+          },
+          "required": false
+        }
+      ],
+      "outputs": [
+        {
+          "key": "station_name",
+          "type": "string",
+          "label": {
+            "en": "Station",
+            "fr": "Station",
+            "de": "Station",
+            "es": "Estación"
+          }
+        },
+        {
+          "key": "measured_at",
+          "type": "string",
+          "label": {
+            "en": "Measured at",
+            "fr": "Mesuré à",
+            "de": "Gemessen um",
+            "es": "Medido a las"
+          },
+          "description": {
+            "en": "ISO 8601, UTC: end of the last hour measured.",
+            "fr": "ISO 8601, UTC : fin de la dernière heure mesurée.",
+            "de": "ISO 8601, UTC: Ende der letzten gemessenen Stunde.",
+            "es": "ISO 8601, UTC: fin de la última hora medida."
+          }
+        },
+        {
+          "key": "level",
+          "type": "number",
+          "label": {
+            "en": "Pollen level",
+            "fr": "Niveau de pollens",
+            "de": "Pollenbelastung",
+            "es": "Nivel de polen"
+          },
+          "description": {
+            "en": "0 (none) to 4 (very high), the highest of the seven pollens; empty when unknown.",
+            "fr": "0 (nul) à 4 (très fort), le plus haut des sept pollens ; vide si inconnu.",
+            "de": "0 (keine) bis 4 (sehr stark), die höchste der sieben Pollenarten; leer, wenn unbekannt.",
+            "es": "0 (nulo) a 4 (muy alto), el más alto de los siete pólenes; vacío si se desconoce."
+          }
+        },
+        {
+          "key": "label",
+          "type": "string",
+          "label": {
+            "en": "Level name",
+            "fr": "Nom du niveau",
+            "de": "Name der Stufe",
+            "es": "Nombre del nivel"
+          }
+        },
+        {
+          "key": "main_pollen",
+          "type": "string",
+          "label": {
+            "en": "Main pollen",
+            "fr": "Pollen principal",
+            "de": "Hauptpollen",
+            "es": "Polen principal"
+          },
+          "description": {
+            "en": "Empty when no pollen is in the air.",
+            "fr": "Vide si aucun pollen n’est dans l’air.",
+            "de": "Leer, wenn keine Pollen in der Luft sind.",
+            "es": "Vacío si no hay polen en el aire."
+          }
+        },
+        {
+          "key": "summary",
+          "type": "string",
+          "label": {
+            "en": "Summary",
+            "fr": "Résumé",
+            "de": "Zusammenfassung",
+            "es": "Resumen"
+          },
+          "description": {
+            "en": "A sentence ready for a message.",
+            "fr": "Une phrase prête pour un message.",
+            "de": "Ein Satz für eine Nachricht.",
+            "es": "Una frase lista para un mensaje."
+          }
+        },
+        {
+          "key": "hazel",
+          "type": "number",
+          "label": {
+            "en": "Hazel (last hour)",
+            "fr": "Noisetier (dernière heure)",
+            "de": "Hasel (letzte Stunde)",
+            "es": "Avellano (última hora)"
+          },
+          "description": {
+            "en": "Last hour, pollen per m³; empty when unknown.",
+            "fr": "Dernière heure, pollens par m³ ; vide si inconnu.",
+            "de": "Letzte Stunde, Pollen pro m³; leer, wenn unbekannt.",
+            "es": "Última hora, pólenes por m³; vacío si se desconoce."
+          }
+        },
+        {
+          "key": "alder",
+          "type": "number",
+          "label": {
+            "en": "Alder (last hour)",
+            "fr": "Aulne (dernière heure)",
+            "de": "Erle (letzte Stunde)",
+            "es": "Aliso (última hora)"
+          },
+          "description": {
+            "en": "Last hour, pollen per m³; empty when unknown.",
+            "fr": "Dernière heure, pollens par m³ ; vide si inconnu.",
+            "de": "Letzte Stunde, Pollen pro m³; leer, wenn unbekannt.",
+            "es": "Última hora, pólenes por m³; vacío si se desconoce."
+          }
+        },
+        {
+          "key": "ash",
+          "type": "number",
+          "label": {
+            "en": "Ash (last hour)",
+            "fr": "Frêne (dernière heure)",
+            "de": "Esche (letzte Stunde)",
+            "es": "Fresno (última hora)"
+          },
+          "description": {
+            "en": "Last hour, pollen per m³; empty when unknown.",
+            "fr": "Dernière heure, pollens par m³ ; vide si inconnu.",
+            "de": "Letzte Stunde, Pollen pro m³; leer, wenn unbekannt.",
+            "es": "Última hora, pólenes por m³; vacío si se desconoce."
+          }
+        },
+        {
+          "key": "birch",
+          "type": "number",
+          "label": {
+            "en": "Birch (last hour)",
+            "fr": "Bouleau (dernière heure)",
+            "de": "Birke (letzte Stunde)",
+            "es": "Abedul (última hora)"
+          },
+          "description": {
+            "en": "Last hour, pollen per m³; empty when unknown.",
+            "fr": "Dernière heure, pollens par m³ ; vide si inconnu.",
+            "de": "Letzte Stunde, Pollen pro m³; leer, wenn unbekannt.",
+            "es": "Última hora, pólenes por m³; vacío si se desconoce."
+          }
+        },
+        {
+          "key": "beech",
+          "type": "number",
+          "label": {
+            "en": "Beech (last hour)",
+            "fr": "Hêtre (dernière heure)",
+            "de": "Buche (letzte Stunde)",
+            "es": "Haya (última hora)"
+          },
+          "description": {
+            "en": "Last hour, pollen per m³; empty when unknown.",
+            "fr": "Dernière heure, pollens par m³ ; vide si inconnu.",
+            "de": "Letzte Stunde, Pollen pro m³; leer, wenn unbekannt.",
+            "es": "Última hora, pólenes por m³; vacío si se desconoce."
+          }
+        },
+        {
+          "key": "oak",
+          "type": "number",
+          "label": {
+            "en": "Oak (last hour)",
+            "fr": "Chêne (dernière heure)",
+            "de": "Eiche (letzte Stunde)",
+            "es": "Roble (última hora)"
+          },
+          "description": {
+            "en": "Last hour, pollen per m³; empty when unknown.",
+            "fr": "Dernière heure, pollens par m³ ; vide si inconnu.",
+            "de": "Letzte Stunde, Pollen pro m³; leer, wenn unbekannt.",
+            "es": "Última hora, pólenes por m³; vacío si se desconoce."
+          }
+        },
+        {
+          "key": "grasses",
+          "type": "number",
+          "label": {
+            "en": "Grasses (last hour)",
+            "fr": "Graminées (dernière heure)",
+            "de": "Gräser (letzte Stunde)",
+            "es": "Gramíneas (última hora)"
+          },
+          "description": {
+            "en": "Last hour, pollen per m³; empty when unknown.",
+            "fr": "Dernière heure, pollens par m³ ; vide si inconnu.",
+            "de": "Letzte Stunde, Pollen pro m³; leer, wenn unbekannt.",
+            "es": "Última hora, pólenes por m³; vacío si se desconoce."
+          }
+        },
+        {
+          "key": "hazel_level",
+          "type": "number",
+          "label": {
+            "en": "Hazel level",
+            "fr": "Niveau noisetier",
+            "de": "Belastung Hasel",
+            "es": "Nivel avellano"
+          },
+          "description": {
+            "en": "0 (none) to 4 (very high).",
+            "fr": "0 (nul) à 4 (très fort).",
+            "de": "0 (keine) bis 4 (sehr stark).",
+            "es": "0 (nulo) a 4 (muy alto)."
+          }
+        },
+        {
+          "key": "alder_level",
+          "type": "number",
+          "label": {
+            "en": "Alder level",
+            "fr": "Niveau aulne",
+            "de": "Belastung Erle",
+            "es": "Nivel aliso"
+          },
+          "description": {
+            "en": "0 (none) to 4 (very high).",
+            "fr": "0 (nul) à 4 (très fort).",
+            "de": "0 (keine) bis 4 (sehr stark).",
+            "es": "0 (nulo) a 4 (muy alto)."
+          }
+        },
+        {
+          "key": "ash_level",
+          "type": "number",
+          "label": {
+            "en": "Ash level",
+            "fr": "Niveau frêne",
+            "de": "Belastung Esche",
+            "es": "Nivel fresno"
+          },
+          "description": {
+            "en": "0 (none) to 4 (very high).",
+            "fr": "0 (nul) à 4 (très fort).",
+            "de": "0 (keine) bis 4 (sehr stark).",
+            "es": "0 (nulo) a 4 (muy alto)."
+          }
+        },
+        {
+          "key": "birch_level",
+          "type": "number",
+          "label": {
+            "en": "Birch level",
+            "fr": "Niveau bouleau",
+            "de": "Belastung Birke",
+            "es": "Nivel abedul"
+          },
+          "description": {
+            "en": "0 (none) to 4 (very high).",
+            "fr": "0 (nul) à 4 (très fort).",
+            "de": "0 (keine) bis 4 (sehr stark).",
+            "es": "0 (nulo) a 4 (muy alto)."
+          }
+        },
+        {
+          "key": "beech_level",
+          "type": "number",
+          "label": {
+            "en": "Beech level",
+            "fr": "Niveau hêtre",
+            "de": "Belastung Buche",
+            "es": "Nivel haya"
+          },
+          "description": {
+            "en": "0 (none) to 4 (very high).",
+            "fr": "0 (nul) à 4 (très fort).",
+            "de": "0 (keine) bis 4 (sehr stark).",
+            "es": "0 (nulo) a 4 (muy alto)."
+          }
+        },
+        {
+          "key": "oak_level",
+          "type": "number",
+          "label": {
+            "en": "Oak level",
+            "fr": "Niveau chêne",
+            "de": "Belastung Eiche",
+            "es": "Nivel roble"
+          },
+          "description": {
+            "en": "0 (none) to 4 (very high).",
+            "fr": "0 (nul) à 4 (très fort).",
+            "de": "0 (keine) bis 4 (sehr stark).",
+            "es": "0 (nulo) a 4 (muy alto)."
+          }
+        },
+        {
+          "key": "grasses_level",
+          "type": "number",
+          "label": {
+            "en": "Grasses level",
+            "fr": "Niveau graminées",
+            "de": "Belastung Gräser",
+            "es": "Nivel gramíneas"
+          },
+          "description": {
+            "en": "0 (none) to 4 (very high).",
+            "fr": "0 (nul) à 4 (très fort).",
+            "de": "0 (keine) bis 4 (sehr stark).",
+            "es": "0 (nulo) a 4 (muy alto)."
+          }
+        }
+      ]
+    }
+  ]
+}
